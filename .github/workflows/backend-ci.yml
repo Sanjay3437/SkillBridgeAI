@@ -1,0 +1,65 @@
+name: Backend CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: pgvector/pgvector:pg16
+        env:
+          POSTGRES_USER: skillbridge
+          POSTGRES_PASSWORD: skillbridge_dev_pass
+          POSTGRES_DB: skillbridge_test
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U skillbridge -d skillbridge_test"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          python -m venv .venv
+          source .venv/bin/activate
+          pip install --upgrade pip
+          pip install -e . "pytest>=8" "httpx>=0.27" "pyyaml>=6"
+
+      - name: Run ruff
+        run: |
+          source .venv/bin/activate
+          pip install ruff
+          ruff check app tests
+
+      - name: Run tests
+        env:
+          DATABASE_URL: postgresql+asyncpg://skillbridge:skillbridge_dev_pass@localhost:5432/skillbridge_test
+          LLM_PROVIDER: mock
+          EMBEDDING_ENABLED: "false"
+        run: |
+          source .venv/bin/activate
+          alembic upgrade head
+          python -m pytest -q
+
+      - name: Run AI benchmark
+        env:
+          DATABASE_URL: postgresql+asyncpg://skillbridge:skillbridge_dev_pass@localhost:5432/skillbridge_test
+          LLM_PROVIDER: mock
+          EMBEDDING_ENABLED: "false"
+        run: |
+          source .venv/bin/activate
+          python scripts/run_matcher_benchmark.py

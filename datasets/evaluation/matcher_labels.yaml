@@ -1,0 +1,43 @@
+version: "1.0.0"
+dataset: matcher_labels
+description: |
+  Labeled (requirement_skill_id, resume_skill_id, expected_match_status) pairs
+  used to benchmark the deterministic gap matcher in app/ai/matcher.py.
+
+  Statuses:
+    - matched:   resume has direct evidence of the required skill.
+    - related:   resume has adjacent experience (domain graph), never counted as matched.
+    - not_evidenced: no resume evidence for the skill.
+field_order: [requirement_id, resume_id, expected_status, note]
+rows:
+  # --- matched: exact skill id with resume evidence ---
+  - [react, react, matched, "Exact alias match on React"]
+  - [fastapi, fastapi, matched, "Exact alias match on FastAPI"]
+  - [postgresql, postgresql, matched, "Exact alias match on PostgreSQL"]
+  - [docker, docker, matched, "Exact alias match on Docker"]
+  - [python, python, matched, "Exact alias match on Python"]
+
+  # --- related: adjacency via RELATED_GROUPS (symmetrized), never matched ---
+  - [kubernetes, docker, related, "Kubernetes related to Docker via container tooling"]
+  - [python, fastapi, related, "Python related to FastAPI (Python framework)"]
+  - [fastapi, python, related, "FastAPI related to Python (language)"]
+  - [postgresql, mysql, related, "PostgreSQL related to MySQL (SQL database)"]
+  - [postgresql, sqlalchemy, related, "PostgreSQL related to SQLAlchemy (ORM)"]
+  - [react, nextjs, related, "React related to Next.js (React framework)"]
+  - [react, javascript, related, "React related to JavaScript (language)"]
+  - [spring-boot, rest-api, related, "Spring Boot related to REST API"]
+  - [spring-boot, java, related, "Spring Boot related to Java"]
+  - [nodejs, javascript, related, "Node.js related to JavaScript"]
+  - [tensorflow, pytorch, related, "TensorFlow related to PyTorch (deep learning)"]
+  - [pytest, testing, related, "pytest related to testing"]
+  - [flask, django, related, "Flask related to Django (Python web)"]
+  - [django, flask, related, "Django related to Flask (symmetry check)"]
+  - [github-actions, ci-cd, related, "GitHub Actions related to CI/CD"]
+  - [ci-cd, github-actions, related, "CI/CD related to GitHub Actions (symmetry check)"]
+
+  # --- not_evidenced: no adjacency, no resume evidence ---
+  - [rust, python, not_evidenced, "Rust not evidenced by Python"]
+  - [go, nodejs, not_evidenced, "Go not evidenced by Node.js"]
+  - [kubernetes, rust, not_evidenced, "Kubernetes not evidenced by Rust"]
+  - [react, csharp, not_evidenced, "React not evidenced by C#"]
+  - [react, vue, not_evidenced, "React not evidenced by Vue (share JS but no direct edge)"]

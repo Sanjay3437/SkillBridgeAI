@@ -1,0 +1,630 @@
+{
+  "version": "1.0.0",
+  "source": "curated",
+  "description": "Curated software-engineering skill taxonomy for SkillBridge AI. Aliases are matched case-insensitively after normalization. Extend freely; keep canonical_name unique.",
+  "skills": [
+    {
+      "id": "python",
+      "canonical_name": "Python",
+      "category": "Languages",
+      "aliases": ["python3", "python 3"],
+      "description": "General-purpose programming language."
+    },
+    {
+      "id": "javascript",
+      "canonical_name": "JavaScript",
+      "category": "Languages",
+      "aliases": ["js", "es6", "ecmascript", "javascript es6"],
+      "description": "Programming language of the web."
+    },
+    {
+      "id": "typescript",
+      "canonical_name": "TypeScript",
+      "category": "Languages",
+      "aliases": ["ts", "typescript 5"],
+      "description": "Typed superset of JavaScript."
+    },
+    {
+      "id": "java",
+      "canonical_name": "Java",
+      "category": "Languages",
+      "aliases": ["java 17", "java 21", "jdk"],
+      "description": "Object-oriented JVM language."
+    },
+    {
+      "id": "go",
+      "canonical_name": "Go",
+      "category": "Languages",
+      "aliases": ["golang"],
+      "description": "Statically typed, compiled language from Google."
+    },
+    {
+      "id": "rust",
+      "canonical_name": "Rust",
+      "category": "Languages",
+      "aliases": ["rustlang"],
+      "description": "Systems language focused on safety and performance."
+    },
+    {
+      "id": "csharp",
+      "canonical_name": "C#",
+      "category": "Languages",
+      "aliases": ["csharp", "c sharp", ".net c#"],
+      "description": "Microsoft's object-oriented language."
+    },
+    {
+      "id": "cpp",
+      "canonical_name": "C++",
+      "category": "Languages",
+      "aliases": ["cplusplus", "c plus plus"],
+      "description": "High-performance systems language."
+    },
+    {
+      "id": "kotlin",
+      "canonical_name": "Kotlin",
+      "category": "Languages",
+      "aliases": ["kotlin jvm"],
+      "description": "Modern JVM and Android language."
+    },
+    {
+      "id": "swift",
+      "canonical_name": "Swift",
+      "category": "Languages",
+      "aliases": ["swiftui language"],
+      "description": "Apple's language for iOS and macOS."
+    },
+    {
+      "id": "sql",
+      "canonical_name": "SQL",
+      "category": "Databases",
+      "aliases": ["structured query language", "ansi sql"],
+      "description": "Query language for relational databases."
+    },
+    {
+      "id": "react",
+      "canonical_name": "React",
+      "category": "Frontend",
+      "aliases": ["reactjs", "react.js", "react 18", "react 19"],
+      "description": "Component-based UI library."
+    },
+    {
+      "id": "nextjs",
+      "canonical_name": "Next.js",
+      "category": "Frontend",
+      "aliases": ["nextjs", "next js", "next 14", "next 15"],
+      "description": "React framework with SSR and routing."
+    },
+    {
+      "id": "vue",
+      "canonical_name": "Vue.js",
+      "category": "Frontend",
+      "aliases": ["vue", "vuejs", "vue 3"],
+      "description": "Progressive JavaScript framework."
+    },
+    {
+      "id": "angular",
+      "canonical_name": "Angular",
+      "category": "Frontend",
+      "aliases": ["angularjs", "angular 17", "angular 18"],
+      "description": "TypeScript-based frontend framework."
+    },
+    {
+      "id": "svelte",
+      "canonical_name": "Svelte",
+      "category": "Frontend",
+      "aliases": ["sveltekit", "svelte 5"],
+      "description": "Compiler-first UI framework."
+    },
+    {
+      "id": "html",
+      "canonical_name": "HTML",
+      "category": "Frontend",
+      "aliases": ["html5", "semantic html"],
+      "description": "Markup language for the web."
+    },
+    {
+      "id": "css",
+      "canonical_name": "CSS",
+      "category": "Frontend",
+      "aliases": ["css3", "cascading style sheets"],
+      "description": "Stylesheet language for the web."
+    },
+    {
+      "id": "tailwind",
+      "canonical_name": "Tailwind CSS",
+      "category": "Frontend",
+      "aliases": ["tailwind", "tailwindcss"],
+      "description": "Utility-first CSS framework."
+    },
+    {
+      "id": "flutter",
+      "canonical_name": "Flutter",
+      "category": "Mobile",
+      "aliases": ["flutter sdk", "flutter dart"],
+      "description": "Cross-platform UI toolkit by Google."
+    },
+    {
+      "id": "dart",
+      "canonical_name": "Dart",
+      "category": "Languages",
+      "aliases": ["dart 3"],
+      "description": "Language used by Flutter."
+    },
+    {
+      "id": "react-native",
+      "canonical_name": "React Native",
+      "category": "Mobile",
+      "aliases": ["reactnative", "react native cli", "expo"],
+      "description": "Mobile framework using React."
+    },
+    {
+      "id": "android",
+      "canonical_name": "Android",
+      "category": "Mobile",
+      "aliases": ["android sdk", "android development"],
+      "description": "Google's mobile platform."
+    },
+    {
+      "id": "ios",
+      "canonical_name": "iOS",
+      "category": "Mobile",
+      "aliases": ["ios development", "swiftui"],
+      "description": "Apple's mobile platform."
+    },
+    {
+      "id": "fastapi",
+      "canonical_name": "FastAPI",
+      "category": "Backend",
+      "aliases": ["fast api"],
+      "description": "Async Python web framework."
+    },
+    {
+      "id": "django",
+      "canonical_name": "Django",
+      "category": "Backend",
+      "aliases": ["django rest framework", "drf"],
+      "description": "Batteries-included Python web framework."
+    },
+    {
+      "id": "flask",
+      "canonical_name": "Flask",
+      "category": "Backend",
+      "aliases": [],
+      "description": "Lightweight Python web framework."
+    },
+    {
+      "id": "nodejs",
+      "canonical_name": "Node.js",
+      "category": "Backend",
+      "aliases": ["nodejs", "node js"],
+      "description": "JavaScript runtime for servers."
+    },
+    {
+      "id": "express",
+      "canonical_name": "Express",
+      "category": "Backend",
+      "aliases": ["expressjs", "express.js"],
+      "description": "Minimal Node.js web framework."
+    },
+    {
+      "id": "spring-boot",
+      "canonical_name": "Spring Boot",
+      "category": "Backend",
+      "aliases": ["springboot", "spring boot"],
+      "description": "Java application framework."
+    },
+    {
+      "id": "graphql",
+      "canonical_name": "GraphQL",
+      "category": "Backend",
+      "aliases": ["graph ql", "apollo graphql"],
+      "description": "Query language for APIs."
+    },
+    {
+      "id": "rest-api",
+      "canonical_name": "REST API",
+      "category": "Backend",
+      "aliases": ["restful api", "rest api", "rest apis", "rest api development", "restful services", "restful apis"],
+      "description": "HTTP-based API design style."
+    },
+    {
+      "id": "grpc",
+      "canonical_name": "gRPC",
+      "category": "Backend",
+      "aliases": ["grpc api", "protocol buffers", "protobuf"],
+      "description": "High-performance RPC framework."
+    },
+    {
+      "id": "microservices",
+      "canonical_name": "Microservices",
+      "category": "Architecture",
+      "aliases": ["micro services", "service-oriented architecture", "soa"],
+      "description": "Architecture of independently deployable services."
+    },
+    {
+      "id": "postgresql",
+      "canonical_name": "PostgreSQL",
+      "category": "Databases",
+      "aliases": ["postgres", "psql", "postgresql 16"],
+      "description": "Open-source relational database."
+    },
+    {
+      "id": "mysql",
+      "canonical_name": "MySQL",
+      "category": "Databases",
+      "aliases": ["mariadb"],
+      "description": "Popular open-source relational database."
+    },
+    {
+      "id": "sqlite",
+      "canonical_name": "SQLite",
+      "category": "Databases",
+      "aliases": ["sqlite3"],
+      "description": "Embedded relational database."
+    },
+    {
+      "id": "mongodb",
+      "canonical_name": "MongoDB",
+      "category": "Databases",
+      "aliases": ["mongo", "mongodb atlas"],
+      "description": "Document-oriented NoSQL database."
+    },
+    {
+      "id": "redis",
+      "canonical_name": "Redis",
+      "category": "Databases",
+      "aliases": ["redis cache", "redis cache store"],
+      "description": "In-memory key-value store."
+    },
+    {
+      "id": "elasticsearch",
+      "canonical_name": "Elasticsearch",
+      "category": "Databases",
+      "aliases": ["elastic search", "opensearch"],
+      "description": "Distributed search and analytics engine."
+    },
+    {
+      "id": "pgvector",
+      "canonical_name": "pgvector",
+      "category": "Databases",
+      "aliases": ["pg vector", "postgres vector"],
+      "description": "Vector similarity extension for PostgreSQL."
+    },
+    {
+      "id": "sqlalchemy",
+      "canonical_name": "SQLAlchemy",
+      "category": "Backend",
+      "aliases": ["sql alchemy"],
+      "description": "Python SQL toolkit and ORM."
+    },
+    {
+      "id": "alembic",
+      "canonical_name": "Alembic",
+      "category": "Databases",
+      "aliases": ["alembic migrations"],
+      "description": "Database migration tool for SQLAlchemy."
+    },
+    {
+      "id": "prisma",
+      "canonical_name": "Prisma",
+      "category": "Databases",
+      "aliases": ["prisma orm"],
+      "description": "Type-safe ORM for Node.js and TypeScript."
+    },
+    {
+      "id": "docker",
+      "canonical_name": "Docker",
+      "category": "DevOps",
+      "aliases": ["containerization", "containerisation", "docker compose", "dockerfile"],
+      "description": "Container platform for packaging applications."
+    },
+    {
+      "id": "kubernetes",
+      "canonical_name": "Kubernetes",
+      "category": "DevOps",
+      "aliases": ["k8s", "kube"],
+      "description": "Container orchestration platform."
+    },
+    {
+      "id": "terraform",
+      "canonical_name": "Terraform",
+      "category": "DevOps",
+      "aliases": ["infrastructure as code", "iac"],
+      "description": "Infrastructure-as-code tool."
+    },
+    {
+      "id": "ansible",
+      "canonical_name": "Ansible",
+      "category": "DevOps",
+      "aliases": [],
+      "description": "Configuration management tool."
+    },
+    {
+      "id": "ci-cd",
+      "canonical_name": "CI/CD",
+      "category": "DevOps",
+      "aliases": ["continuous integration", "continuous delivery", "continuous deployment", "cicd"],
+      "description": "Automated build, test, and deployment pipelines."
+    },
+    {
+      "id": "github-actions",
+      "canonical_name": "GitHub Actions",
+      "category": "DevOps",
+      "aliases": ["github action", "gh actions"],
+      "description": "CI/CD platform built into GitHub."
+    },
+    {
+      "id": "git",
+      "canonical_name": "Git",
+      "category": "Tools",
+      "aliases": ["version control", "git version control"],
+      "description": "Distributed version control system."
+    },
+    {
+      "id": "linux",
+      "canonical_name": "Linux",
+      "category": "Tools",
+      "aliases": ["unix"],
+      "description": "Unix-like operating system and shell tooling."
+    },
+    {
+      "id": "aws",
+      "canonical_name": "AWS",
+      "category": "Cloud",
+      "aliases": ["amazon web services", "amazon aws", "ec2", "s3"],
+      "description": "Amazon Web Services cloud platform."
+    },
+    {
+      "id": "gcp",
+      "canonical_name": "Google Cloud",
+      "category": "Cloud",
+      "aliases": ["gcp", "google cloud platform", "bigquery"],
+      "description": "Google Cloud Platform."
+    },
+    {
+      "id": "azure",
+      "canonical_name": "Azure",
+      "category": "Cloud",
+      "aliases": ["microsoft azure"],
+      "description": "Microsoft's cloud platform."
+    },
+    {
+      "id": "firebase",
+      "canonical_name": "Firebase",
+      "category": "Cloud",
+      "aliases": ["firebase auth", "firestore"],
+      "description": "Google's app development platform."
+    },
+    {
+      "id": "supabase",
+      "canonical_name": "Supabase",
+      "category": "Cloud",
+      "aliases": ["supabase auth", "supabase postgres"],
+      "description": "Open-source Firebase alternative on Postgres."
+    },
+    {
+      "id": "serverless",
+      "canonical_name": "Serverless",
+      "category": "Cloud",
+      "aliases": ["lambda", "cloud functions", "aws lambda"],
+      "description": "Event-driven compute without server management."
+    },
+    {
+      "id": "testing",
+      "canonical_name": "Automated Testing",
+      "category": "Testing",
+      "aliases": ["unit testing", "integration testing", "test automation", "tdd"],
+      "description": "Writing automated tests for software."
+    },
+    {
+      "id": "pytest",
+      "canonical_name": "pytest",
+      "category": "Testing",
+      "aliases": ["py.test"],
+      "description": "Python testing framework."
+    },
+    {
+      "id": "jest",
+      "canonical_name": "Jest",
+      "category": "Testing",
+      "aliases": ["jestjs"],
+      "description": "JavaScript testing framework."
+    },
+    {
+      "id": "cypress",
+      "canonical_name": "Cypress",
+      "category": "Testing",
+      "aliases": ["cypress.io", "e2e testing"],
+      "description": "End-to-end browser testing framework."
+    },
+    {
+      "id": "playwright",
+      "canonical_name": "Playwright",
+      "category": "Testing",
+      "aliases": ["playwright testing"],
+      "description": "Browser automation and testing framework."
+    },
+    {
+      "id": "machine-learning",
+      "canonical_name": "Machine Learning",
+      "category": "Data/AI",
+      "aliases": ["ml", "supervised learning", "model training"],
+      "description": "Building statistical models that learn from data."
+    },
+    {
+      "id": "deep-learning",
+      "canonical_name": "Deep Learning",
+      "category": "Data/AI",
+      "aliases": ["neural networks", "cnn", "rnn", "transformers"],
+      "description": "Neural-network based machine learning."
+    },
+    {
+      "id": "nlp",
+      "canonical_name": "NLP",
+      "category": "Data/AI",
+      "aliases": ["natural language processing", "text processing"],
+      "description": "Processing and understanding human language."
+    },
+    {
+      "id": "pytorch",
+      "canonical_name": "PyTorch",
+      "category": "Data/AI",
+      "aliases": ["torch"],
+      "description": "Deep learning framework by Meta."
+    },
+    {
+      "id": "tensorflow",
+      "canonical_name": "TensorFlow",
+      "category": "Data/AI",
+      "aliases": ["keras"],
+      "description": "Deep learning framework by Google."
+    },
+    {
+      "id": "scikit-learn",
+      "canonical_name": "scikit-learn",
+      "category": "Data/AI",
+      "aliases": ["sklearn", "scikit learn"],
+      "description": "Classical machine learning library for Python."
+    },
+    {
+      "id": "pandas",
+      "canonical_name": "pandas",
+      "category": "Data/AI",
+      "aliases": ["python pandas"],
+      "description": "Data analysis library for Python."
+    },
+    {
+      "id": "numpy",
+      "canonical_name": "NumPy",
+      "category": "Data/AI",
+      "aliases": ["numpy arrays"],
+      "description": "Numerical computing library for Python."
+    },
+    {
+      "id": "llm",
+      "canonical_name": "LLM Integration",
+      "category": "Data/AI",
+      "aliases": ["large language models", "llm api", "openai api", "prompt engineering"],
+      "description": "Integrating large language models into applications."
+    },
+    {
+      "id": "rag",
+      "canonical_name": "RAG",
+      "category": "Data/AI",
+      "aliases": ["retrieval augmented generation", "retrieval-augmented generation", "vector search"],
+      "description": "Retrieval-augmented generation over private data."
+    },
+    {
+      "id": "embeddings",
+      "canonical_name": "Embeddings",
+      "category": "Data/AI",
+      "aliases": ["sentence transformers", "sentence-transformers", "vector embeddings", "semantic search"],
+      "description": "Vector representations for semantic similarity."
+    },
+    {
+      "id": "opencv",
+      "canonical_name": "OpenCV",
+      "category": "Data/AI",
+      "aliases": ["computer vision", "cv2"],
+      "description": "Computer vision library."
+    },
+    {
+      "id": "data-analysis",
+      "canonical_name": "Data Analysis",
+      "category": "Data/AI",
+      "aliases": ["data analytics", "exploratory data analysis", "eda"],
+      "description": "Analyzing data to extract insights."
+    },
+    {
+      "id": "data-visualization",
+      "canonical_name": "Data Visualization",
+      "category": "Data/AI",
+      "aliases": ["matplotlib", "seaborn", "tableau", "data viz"],
+      "description": "Visualizing data for communication."
+    },
+    {
+      "id": "agile",
+      "canonical_name": "Agile",
+      "category": "Process",
+      "aliases": ["scrum", "kanban", "agile methodology"],
+      "description": "Iterative software delivery practices."
+    },
+    {
+      "id": "jira",
+      "canonical_name": "Jira",
+      "category": "Process",
+      "aliases": ["atlassian jira"],
+      "description": "Issue and project tracking tool."
+    },
+    {
+      "id": "system-design",
+      "canonical_name": "System Design",
+      "category": "Architecture",
+      "aliases": ["distributed systems", "software architecture", "scalable systems"],
+      "description": "Designing scalable, reliable systems."
+    },
+    {
+      "id": "oauth",
+      "canonical_name": "OAuth",
+      "category": "Security",
+      "aliases": ["oauth2", "openid connect", "oidc", "sso"],
+      "description": "Authorization framework for delegated access."
+    },
+    {
+      "id": "jwt",
+      "canonical_name": "JWT",
+      "category": "Security",
+      "aliases": ["json web tokens", "json web token"],
+      "description": "Signed token format for authentication."
+    },
+    {
+      "id": "security",
+      "canonical_name": "Application Security",
+      "category": "Security",
+      "aliases": ["appsec", "web security", "owasp"],
+      "description": "Securing applications against threats."
+    },
+    {
+      "id": "performance",
+      "canonical_name": "Performance Optimization",
+      "category": "Architecture",
+      "aliases": ["performance tuning", "profiling", "caching", "lazy loading"],
+      "description": "Improving application speed and efficiency."
+    },
+    {
+      "id": "message-queues",
+      "canonical_name": "Message Queues",
+      "category": "Backend",
+      "aliases": ["kafka", "rabbitmq", "celery", "event streaming"],
+      "description": "Asynchronous messaging between services."
+    },
+    {
+      "id": "websockets",
+      "canonical_name": "WebSockets",
+      "category": "Backend",
+      "aliases": ["websocket", "socket.io", "real-time"],
+      "description": "Full-duplex real-time communication."
+    },
+    {
+      "id": "design-systems",
+      "canonical_name": "Design Systems",
+      "category": "Frontend",
+      "aliases": ["component library", "ui kit", "storybook"],
+      "description": "Reusable UI component systems."
+    },
+    {
+      "id": "accessibility",
+      "canonical_name": "Accessibility",
+      "category": "Frontend",
+      "aliases": ["a11y", "wcag", "web accessibility"],
+      "description": "Making interfaces usable by everyone."
+    },
+    {
+      "id": "git-flow",
+      "canonical_name": "Git Workflows",
+      "category": "Tools",
+      "aliases": ["code review", "pull requests", "branching strategy"],
+      "description": "Team workflows built around Git."
+    }
+  ]
+}
